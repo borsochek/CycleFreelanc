@@ -1,6 +1,7 @@
 package ru.netology.services;
+
 public class FreelancService {
-    public int calculate (int income, int expenses, int threshold){
+    public int calculate(int income, int expenses, int threshold) {
         int money = 0;
         int counter = 0;
 
@@ -8,10 +9,10 @@ public class FreelancService {
             if (money < threshold) {
                 money += income;
                 money -= expenses;
-            }else{
+            } else {
                 money -= expenses;
-                money /=3;
-                counter ++;
+                money /= 3;
+                counter++;
             }
         }
         return counter;

@@ -15,12 +15,12 @@ class FreelancServiceTest {
         Assertions.assertEquals(expected, actual);
     }
 
-        @Test
-        public void CalculateCase2() {
-            FreelancService service = new FreelancService();
-            int expected = 2;
-            int actual = service.calculate(100_000, 60_000, 150_000);
-            Assertions.assertEquals(expected, actual);
+    @Test
+    public void CalculateCase2() {
+        FreelancService service = new FreelancService();
+        int expected = 2;
+        int actual = service.calculate(100_000, 60_000, 150_000);
+        Assertions.assertEquals(expected, actual);
 
     }
 
